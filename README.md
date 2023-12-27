@@ -4,5 +4,5 @@
 Please note that the website was made for fun and entertainment purposes.
 The current code does **NOT** contain any viruses or malware.
 If someone does report me for it, it will **NOT** be my fault/problem.
---------------------------------------------------------------------
-Copyright © 2023 by Radostin Iliev. All rights reserved.
+
+### Copyright © 2023 by Radostin Iliev. All rights reserved.
