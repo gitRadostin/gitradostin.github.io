@@ -1,8 +1,5 @@
 # gitradostin.github.io
 
-*You can visit the website [here](https://gitradostin.github.io).*
-Please note that the website was made for fun and entertainment purposes.
-The current code does **NOT** contain any viruses or malware.
-If someone does report me for it, it will **NOT** be my fault/problem.
+**Website:** https://gitradostin.github.io
 
-Copyright © 2023 by Radostin Iliev. All rights reserved.
+**Disclaimer:** This website was crafted solely for recreational and entertainment purposes. The current code is meticulously structured to ensure the absence of any malicious elements. Any reported issues arising from the website's content are beyond the creator's responsibility.
