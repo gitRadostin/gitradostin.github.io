@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    color: white;
+    background: #121212;
+    font-family: 'Lato', sans-serif;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background: rgba(255,255,255,0.25);
+    width: 90%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    background: rgba(0,0,0,0.333333);
+  }
+
+  footer p {
+    background: transparent;
+  }
