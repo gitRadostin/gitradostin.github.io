@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     background-color: #1f1f1f;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-align: center;
 }
 
+hr {
+    width: 90%;
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.333);
+}
