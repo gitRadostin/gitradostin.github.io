@@ -1,1 +1,1 @@
-// you would put your javascript code here
+// javascript here
