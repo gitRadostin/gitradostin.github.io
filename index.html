@@ -1,26 +1,226 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <link rel="stylesheet" href="styles.css">
+<html><head><base href="https://example.com/portfolio/radostin/"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radostin's Portfolio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to bottom, #0e0e0e, #1a1a1a);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #0ff;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+.description {
+    font-style: italic;
+    color: #bbb;
+}
+
+.container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.container {
+    background-color: #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: calc(33.33% - 2rem);
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+.container:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
+
+.container:hover > *:not(h3) {
+    transform: translateZ(20px);
+}
+
+.container h3 {
+    margin-top: 0;
+}
+
+.container label {
+    font-weight: bold;
+    color: #bbb;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.disclaimer {
+    color: #bbb;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+code {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Fira Code', monospace;
+    margin: 0 6px 0 6px;
+    border-radius: 4px;
+}
+
+a:hover {
+    color: #0ff;
+}
+
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    opacity: 0.5;
+    margin: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+</style>
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <h1>Website</h1>
-        <p>Welcome to my website.</p>
+        <h1>Radostin</h1>
+        <p class="description">My Portfolio</p>
     </header>
 
-    <!-- Contents -->
-    <div class="container">
-        <h2>Container</h2>
-        <p>Sunt exercitation irure esse nulla. Consectetur id occaecat nulla dolor. Ex laborum do id nisi anim cupidatat anim nostrud. Incididunt elit ea duis adipisicing excepteur mollit proident labore laboris veniam veniam id. Ut consequat consequat nostrud pariatur commodo quis sint.</p>
-        <button>Button</button>
+    <div class="container-wrapper">
+        <div class="container">
+            <h3>About Me</h3>
+            <p><label>Name:</label> Radostin</p>
+            <p><label>Religion:</label> Christianity (Orthodox)</p>
+            <p><label>Country:</label> Bulgaria (BG) 🇧🇬</p>
+            <p><label>City:</label> Plovdiv</p>
+            <p><label>Region:</label> Europe 🇪🇺</p>
+            <p><label>Siblings:</label> 1 older brother</p>
+        </div>
+
+        <div class="container">
+            <h3>Interests</h3>
+            <p><label>Favorite Color:</label> Medium Blue</p>
+            <p><label>Favorite Foods:</label> Spaghetti and Pizza</p>
+            <p><label>Hobbies:</label> Gaming, Speedcubing</p>
+        </div>
+
+        <div class="container">
+            <h3>Social Media</h3>
+            <p><label>YouTube:</label> <a href="https://www.youtube.com/@rad0stin">@rad0stin</a></p>
+            <p><label>Discord:</label> rad0stin</p>
+            <p><label>X (Twitter):</label> <a href="https://x.com/Radostin102">Radostin102</a></p>
+            <p><label>Roblox:</label> <a href="https://www.roblox.com/users/1113295897/profile">Radostin (@Radostin_Gaming)</a></p>
+        </div>
+
+        <div class="container">
+            <h3>Gaming</h3>
+            <p><label>Platforms:</label> Desktop, PlayStation 4, PlayStation 2</p>
+            <p><label>Minecraft:</label> SKlauncher (cracked account)</p>
+            <p><label>Roblox:</label> Bloxstrap user</p>
+        </div>
+
+        <div class="container">
+            <h3>Languages</h3>
+            <p><label>Bulgarian:</label> Native</p>
+            <p><label>English:</label> Proficient</p>
+            <p><label>German:</label> Basic (Had lived 5 years in Germany)</p>
+        </div>
+
+        <div class="container">
+            <h3>Speedcubing</h3>
+            <p><label>Current Average:</label> 55 seconds</p>
+            <p><label>Personal Best:</label> 43.69 seconds</p>
+            <p><label>Current Cube:</label> Yuxin Little Magic</p>
+            <p><label>Future Plans:</label> Moyu RS3 M 2020, possibly 2x2 cube</p>
+            <p><label>Dream Cube:</label> GAN 11 M Pro</p>
+        </div>
+
+        <div class="container">
+            <h3>Tech Setup</h3>
+            <p><label>Laptop:</label> Lenovo Ideapad 3</p>
+            <p><label>Phone:</label> Xiaomi Redmi A2 (with Smart Launcher 6)</p>
+            <p><label>Internet:</label> Cooolbox (~750 Mbps download)</p>
+        </div>
+
+        <div class="container">
+            <h3>Laptop Specs</h3>
+            <p><label>RAM:</label> 8 GB</p>
+            <p><label>CPU:</label> Intel Core i5-10210U</p>
+            <p><label>GPU:</label> Integrated Graphics</p>
+            <p><label>OS:</label> Windows 11 Home</p>
+        </div>
+
+        <div class="container">
+            <h3>Fun Fact</h3>
+            <p>Run <code>sudo rm -rf /*</code> on your Linux machine</p>
+            <p class="disclaimer"><small>(Disclaimer: definitely do it)</small></p>
+        </div>
     </div>
 
-    <!-- Footer -->
-    <footer>&copy; 2024 Radostin</footer>
+    <footer>
+        <p>&copy; 2024 Radostin. All rights reserved.</p>
+    </footer>
+
+    <script>
+    document.querySelectorAll('.container').forEach(container => {
+        container.addEventListener('mousemove', (e) => {
+            const rect = container.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 20;
+            const rotateY = (centerX - x) / 20;
+            
+            container.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        container.addEventListener('mouseleave', () => {
+            container.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+        });
+    });
+    </script>
 </body>
 </html>
